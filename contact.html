@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- Add this in the head section of your HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.min.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            height: auto;
+        }
+
+
+        .mail {
+            padding: 5vh 6vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .textmail {
+            font-size: 1.8rem;
+            padding: 3vh;
+        }
+
+        form {
+            max-width: 420px;
+            /* margin: 50px auto; */
+        }
+
+        .feedback-input {
+            color: white;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            border-radius: 5px;
+            line-height: 22px;
+            background-color: transparent;
+            border: 2px solid #CC6666;
+            transition: all 0.3s;
+            padding: 13px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            outline: 0;
+        }
+
+        .feedback-input:focus {
+            border: 2px solid #CC4949;
+        }
+
+        textarea {
+            height: 150px;
+            line-height: 150%;
+            resize: vertical;
+        }
+
+        [type="submit"] {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            width: 100%;
+            background: #CC6666;
+            border-radius: 5px;
+            border: 0;
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: all 0.3s;
+            margin-top: -4px;
+            font-weight: 700;
+        }
+
+        [type="submit"]:hover {
+            background: #CC4949;
+        }
+
+        .hmap {
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 2.2vh;
+        }
+
+        .bmap {
+            text-align: center;
+            padding: 8px;
+        }
+
+        .mapbtn {
+            text-align: center;
+            padding: 10px 10px 30px 10px;
+        }
+
+        .custom-button {
+            display: inline-block;
+            padding: 4px 12px;
+            background-color: #0080ff;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+
+        .custom-button:hover {
+            background-color: #0044ff;
+        }
+
+        @media screen and (max-width: 960px) {
+            .textmail {
+                font-size: 1.4rem;
+            }
+
+            .hmap {
+                font-size: 1.4rem !important;
+            }
+        }
+
+        @media screen and (max-width: 470px) {
+            .mail {
+                padding: 1vh 6vw 2vh;
+            }
+
+            .textmail {
+                font-size: 1.1rem;
+                padding: 1.5vh;
+            }
+
+            .hmap {
+                font-size: 1.2rem !important;
+                padding: 2.2vh 2.2vh 0 2.2vh !important;
+            }
+
+            [type="submit"] {
+                font-size: 1rem;
+            }
+
+            .feedback-input {
+                padding: 6px;
+                font-size: 14.5px;
+            }
+
+            .custom-button {
+                font-size: 11px !important;
+                padding: 3px 10px !important;
+            }
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">V. E. School</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- teachers=meet the faculties -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="mail">
+            <div class="textmail">Enter Your Message</div>
+            <form>
+                <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+                <input type="submit" value="SUBMIT" />
+            </form>
+        </div>
+
+        <div class="map1">
+            <div class="hmap">School Location</div>
+            <div class="bmap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.367898707444!2d86.8796842754594!3d23.94742737853653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6d7905923c675%3A0xb1a3586a630f1db6!2sVIVEKANANDA%20ENGLISH%20SCHOOL!5e0!3m2!1sen!2sin!4v1703598150926!5m2!1sen!2sin"
+                    width="90%" height="450" style="border:7px solid rgb(4, 4, 86); border-radius: 17px;"
+                    allowfullscreen="" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="mapbtn">
+            <div class="custom-button" onclick="handleButtonClick()"><a href="https://maps.app.goo.gl/xds6xa9bBBJe27i89"
+                    class="custom-button">Open In Map</a></div>
+        </div>
+    </main>
+    <footer>
+        <div class="Footer">
+            <div class="col1">
+                <h3>V.E. School</h3>
+                <div class="addr">
+                    <ul>
+                        <li><i class='fa fa-search-location'></i>&nbsp; Kalajharia(River Side), Jamtara-Nala Road,
+                            Jamtara-815351</li>
+                        <li><i class='fa fa-phone-alt'></i>&nbsp; Contact: +91 1234567890</li>
+                    </ul>
+                </div>
+                <p>"Thank you for being part of our educational journey. Together, we inspire and achieve excellence."
+                </p>
+                <div class="footer-rights">
+                    Copyright © www.rohitswebportfolio.netlify.app | All rights reserved
+                </div>
+            </div>
+            <div class="col2"><a href="https://rohitswebportfolio.netlify.app">Designed by Rohit</a></div>
+        </div>
+    </footer>
+
+
+    <!-- Add this script tag after including SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+
+            // Function to handle button click
+            function handleSendLetterClick() {
+                // Show a styled popup using SweetAlert at the bottom
+                Swal.fire({
+                    title: 'Thank you!',
+                    text: 'Your message has been sent.',
+                    icon: 'success',
+                    confirmButtonText: 'OK',
+                    position: 'bottom'
+                });
+
+                // Reset the form after successful submission
+                form.reset();
+            }
+
+            // Attach the function to the form submit event
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                // Get form inputs
+                const firstName = document.querySelector('input[name="name"]').value;
+                const email = document.querySelector('input[name="email"]').value;
+                const message = document.querySelector('textarea[name="text"]').value;
+
+                // Validate inputs (you can add more validation if needed)
+                if (!firstName || !email || !message) {
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Please fill in all fields.',
+                        icon: 'error',
+                        confirmButtonText: 'OK',
+                        position: 'bottom'
+                    });
+                    return;
+                }
+
+                // Construct the email body
+                const bodyMessage = `First Name: ${firstName}<br> Email: ${email}<br> Message: ${message}<br>`;
+
+                // Send email
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "kumar09rohitkumar@gmail.com",
+                    Password: "4C802F73EA2A6322FB12FA0420EC23ACDF86",
+                    To: 'kumar09rohitkumar@gmail.com',
+                    From: "kumar09rohitkumar@gmail.com",
+                    Subject: "Contact Form Submission",
+                    Body: bodyMessage
+                }).then(function (message) {
+                    if (message === "OK") {
+                        handleSendLetterClick();
+                    } else {
+                        Swal.fire({
+                            title: 'Error',
+                            text: 'Failed to send the message. Please try again later.',
+                            icon: 'error',
+                            confirmButtonText: 'OK',
+                            position: 'bottom'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
