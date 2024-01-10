@@ -7,7 +7,7 @@ function isMobileDevice() {
   
   // Check if the viewport width is less than a specified threshold
   function isSmallViewport() {
-    return window.innerWidth < 600; // Adjust the threshold as needed
+    return window.innerWidth < 100; // Adjust the threshold as needed
   }
   
   // Redirect or display a message based on the device and viewport
